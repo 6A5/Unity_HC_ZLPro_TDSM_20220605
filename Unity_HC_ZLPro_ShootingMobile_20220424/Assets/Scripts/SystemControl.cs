@@ -32,7 +32,7 @@ namespace KID
         private Rigidbody rig;
         private Animator ani;
         private Joystick joystick;
-        private Transform traDirectionIcon;
+        public  Transform traDirectionIcon;
         private CinemachineVirtualCamera cvc;
         private SystemAttack systemAttack;
         private DamageManager damageManager;
