@@ -105,13 +105,14 @@ namespace KID
 
         private IEnumerator Dissolve() 
         {
-            systemControl.traDirectionIcon.gameObject.SetActive(false);
-            systemControl.enabled = false;
             systemAttack.enabled = false;
+            systemControl.enabled = false;
+
+            if (systemControl.traDirectionIcon) systemControl.traDirectionIcon.gameObject.SetActive(false);
 
             float valueDissolve = 3;
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 30; i++)
             {
                 valueDissolve -= 0.3f;
                 // 更新著色器屬性
