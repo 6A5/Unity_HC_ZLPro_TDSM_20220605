@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using TMPro;
 
 namespace KID
 {
@@ -21,7 +22,7 @@ namespace KID
         [HideInInspector]
         public Image imgHp;
         [HideInInspector]
-        public Text textHp;
+        public TextMeshProUGUI textHp;
 
         private void Awake()
         {
